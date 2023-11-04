@@ -1,0 +1,153 @@
+***Python***
+#Python - 
+#Lógica de Programação - 
+#Bots em Python - 
+
+*Playlist Curso Em Video(CEV)
+*Livros - #|
+----------------------------------------------------------
+CEV - Aula 0 - (01/10/23)
+
+---------------------------//-----------------------------
+CEV - Aula 1 - (01/10/23)
+#Seja um Programador
+#Para que serve o Python ?
+#Instalando ambiente
+#Primeiros comandos
+///Pulei a introdução que já vi algumas vezes
+
+---------------------------//-----------------------------
+CEV - Aula 2 - (01/10/23)
+#Tipos primitivos e Saída de Dados
+#Operadores Aritméticos
+*.print(f"{var}" - Comando que printa, porém utilizando um placeholder.
+///Colocar uma tag dizendo qual o tipo da variavel, após o "recebe" irá transformar a variavel que recebe o input como o tipo da variavel; num = int(input()).
+///Ao usar o comando print(type(var)) consigo ver o tipo de uma variavel.
+*isnumeric() - Função que retona se o valor é numérico.
+///is+algo gera funções que verificam se o valor é alguma coisa em específica.
+///Os operadores aritméticos e comparativos seguem o padrão.
+///Escrever :.2f num placeholder limita as casas decimais da variavel, podendo substuir o 2f por valores de formatação.
+///Escrever end='' no final dum print, impede a quebra de linha do mesmo e digita oque tiver dentro das aspas.
+
+---------------------------//-----------------------------
+CEV - Aula 3 - (06/10/23)
+#Utilizando Módulos
+///Aula explicando o que são e pra que servem bibliotecas.
+*import - Comando utilizado para importar uma biblioteca.
+	*from - Comando que pode ser usado antes do nome da biblioteca para importar somente um elemento específico da biblioteca.
+*Lista Python - Para criar uma lista basta escrever a variavel recebe [var1,var2].
+	*list.insert(var1,var2) - Comando para inserir valores na lista. A var1 é a posição onde os elementos serão inseridos e a partir dar var2 serão os elementos a serem inseridos.
+*Random as r - Biblioteca utilizada para fazer randomizações.
+	*r.choice(var) - Comando que escolhe um item aleatório dentro de uma lista.
+	*r.shuffle(var) - Comando que randomiza os elementos dentro de uma lista.
+
+---------------------------//-----------------------------
+CEV - Aula 4 - (06/10/23)
+#Manipulando Texto
+///No python usa-se [] para selecionar elementos duma string. Podendo usar numeros para delimitar quais caracteres serão pegos; var[12:15], var[:12].
+*len() - Comando retorna a largura de uma String.
+*count('') - Comando que conta quantos caracteres existem dentro da String.
+*find('') - Comando que procura/verifica um texto dentro duma String.
+*in - Comando que retorna verdadeiro ou falso caso o texto exista na String; 'Olá' in var.
+*replace ('') - Comando que substitui uma cadeia de caracteres por outra.
+*Comandos transformadores - Comandos que transforam o texto duma String.
+	*upper() - Transforma em caixa alta.
+	*lower() - Transforma em caixa baixa
+	*capitalize() - Transforma a em caixa baixa, mas a primeira fica em maiúscula.
+	*title() - Transforma todas as palavras(textos separados por espaço, ou algum delimitador) em caixa baixa, mantendo sua inicial maiúscula.
+	*strip() - Comando que remove os espaços inúteis duma String. Tendo as variações R-L.
+*Comandos de Divisão/junção - Comandos para separar e manusear os caracteres duma String.
+	*split() - Divide os caracteres em uma lista de elementos, baseado nos espaços ou delimitadores.
+	*join() - Junta uma lista de elementos em uma String;'-'.join(var).
+///Se utilizar três aspas num print """texto"""" é possível printar um bloco de texto, indo sua quebra de linha junto.
+
+---------------------------//-----------------------------
+CEV - Aula 5 - (09/10/23)
+#Exercícios
+#Condições
+*if - if var.funcition():
+*Condição simplificada - Consiste em simplificar um if; print('texto' if var <= x else'texto2').
+*biblioteca time - Biblioteca para controlar o tempo de execução do programa.
+	*sleep - Faz o computador "dormir" por um momento.
+*end='' - comando que serve para juntar o final de um print com o começo do próximo.
+
+---------------------------//-----------------------------
+CEV - Aula 6 - (10/10/23)
+#Cores no Terminal
+#ANSI
+*ANSI - Padrão de 'escap sequence' para criar cores num terminal, funciona em várias linguagens.
+	*\033[ m - Estrutura da inserção de cores, entre o [ e o 'm' ficam os códigos de estilização; \o33[0;33;44m
+	*style - É o estilo que será inserido; 0(none), 1(Bold), 4(Underline), 7(Negative).
+	*Text - 30 ao 37,97 representam as cores de texto, respectivamente(preto, vermelho, verde, amarelo, azul, roxo, ciano, cinza, branco).
+	*Back - 40 ao 47,107 representam as cores de fundo, respectivamente(preto, vermelho, verde, amarelo, azul, roxo, ciano, cinza, branco).
+///É possível armazenar os códigos em variáveis e utilizá-los nos placeholders.
+
+---------------------------//-----------------------------
+CEV - Aula 7 - (10/10/23)
+#Mundo 2
+#Condições Aninhadas
+#Exercícios
+///Pode-se utilizar a variavel no meio de duas comparações; if 5 > var >= 3:.
+///Pode-se utilizar uma comparação de igualdade com mais de duas variaveis;if var1== var2 == var3:.
+
+---------------------------//-----------------------------
+CEV - Aula 8 - (12/10/23)
+#Estrutura de repetição for
+#Exercícios
+*For - for Var In Range(x,y,z): - Sendo var uma variavel qualquer, In o que será utilizado como repetição, Range o alcance da repeitção e sendo X,Y,Z valores de controle(1,10,2), começa em 1, vai até 10 e pula de 2 em 2.
+
+---------------------------//-----------------------------
+CEV - Aula 9 - (13/10/23)
+#Estrutura de repetição while
+///Utilizar o while no lugar do for quando não soubr quantas repetições serão necessárias.
+*while (expressão): ||O loop irá se repetir enquanto a expressão for verdadeira.
+
+---------------------------//-----------------------------
+CEV - Aula 10 - (19/10/23)
+#Interrompendo repetições while
+///Ao criar um loop while sem uma expressão, ele se torna infinito e ao utilizarmos um comando(break) ele para o loop.
+
+---------------------------//-----------------------------
+CEV - Aula 11 - (03/11/23)
+#Tuplas
+*Uma sequência de itens armazenados numa variável, indentificados pelos seus indices;Tupla[0] mostra o primeiro elemento da tupla.
+///Pode-se manipular as tuplas assim como se manipula as strings.[:2],[0:2:2].
+///As tuplas são IMUTÁVEIS em python.
+///É possível concatenar arrays; C = A+B.
+///É possível saber a posição de um elemento dum array utilizando o comando index; A.index(X).
+----------------------------------------------------------
+COMANDOS*****
+#NATIVOS
+*del - Apaga uma variável da memória.
+*index - Retorna a posição de um elemento num array/list/dictionary.
+*input - Comando que recebe uma string e insere numa variável.
+*for:
+	*for C in Lanche: - Lanche sendo um array de 4 itens, o for irá percorrer os 4 itens, armazenando-os em C.
+	*for X,Y in enumerate(A): - X recebe a posição de A e Y recebe o elemento de A.
+
+*print - Comando que escreve na tela.
+*sorted - Ordena um array em ordem alfabética.
+
+#MATH
+*
+*
+*
+*
+
+#RANDOM
+*
+*
+*
+
+#
+*
+*
+*
+
+
+
+
+
+
+
+
