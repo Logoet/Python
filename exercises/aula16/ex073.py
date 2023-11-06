@@ -1,4 +1,4 @@
-times = ('Botafogo','Palmeiras','Bragantino','Grêmio','Atlético Mineiro','Flamengo','Athletico-PR','Fluminense','Fortaleza','São Paulo','Cuiabá','Corinthians','Internacional','Bahia','Santos','Cruzeiro','Vasco da gama','Goiás','Coritiba','América-MG')
+times = ('Botafogo','Palmeiras','Bragantino','Grêmio','Atlético Mineiro','Flamengo','Atlético-PR','Fluminense','Fortaleza','São Paulo','Cuiabá','Corinthians','Internacional','Bahia','Santos','Cruzeiro','Vasco da gama','Goiás','Coritiba','América-MG')
 
 print(f'(A)Os 5 primeiros colocados do brasileirão são: \n {times[:5]}!')
 print("~"*120)
