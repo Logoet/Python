@@ -1,26 +1,51 @@
 ***Python***
-#Python - 
-#Lógica de Programação - 
-#Bots em Python - 
-
 *Playlist Curso Em Video(CEV)
-*Livros - #|
+*Livros - ?
 ----------------------------------------------------------
+SUMÁRIO
+A0  - Introdução.
+A1  - Tipos de Dados/Saída de dados
+A2  - 
+A3  - 
+A4  -
+A5  -
+A6  -
+A7  -
+A8  - 
+A9  - 
+A10 -
+A11 -
+
+
+---------------------------//-----------------------------
 CEV - Aula 0 - (01/10/23)
+##Introdução.
+//O Python é usado para: Web development(server-side), software development, matemática e system scripting.
+//O Python pode ser conectado a sistemas de banco de dados, pode trabalhar com arquivos de texto, pode trabalhar com grandes dados e matemática complexa.
+//O python suporta sistema procedural, OOP e sistema funcional.
 
++++COMANDOS+++
+--Native
+*
 ---------------------------//-----------------------------
-CEV - Aula 1 - (01/10/23)
-#Seja um Programador
-#Para que serve o Python ?
-#Instalando ambiente
-#Primeiros comandos
-///Pulei a introdução que já vi algumas vezes
-
----------------------------//-----------------------------
-CEV - Aula 2 - (01/10/23)
+Aula 1 - X
+##Tipos de Dados
 #Tipos primitivos e Saída de Dados
 #Operadores Aritméticos
-*.print(f"{var}" - Comando que printa, porém utilizando um placeholder.
+
+//Em Python as variáveis não precisam ser declaradas com um tipo e podem mudar de tipo conforme o programa roda.
+*Casting - forçar o tipo de uma variável; x = str(3), y = int(3).
+*Unpacking - É possível atribuir os valores duma lista/tupla/etc em variáveis iguais ao número de itens da lista; num[1...3] x,y,z=num.
+*Global keyword - É possível criar uma variável dentro duma função e torná-la global; global x | x = 'teste'.
+*Data Types - Tipos de dados duma variável.
+	*Text - str.
+	*Numeric - int, float, complex.
+	*Sequence - list, tuple, range.
+	*Mapping - dict.
+	*Set - set, frozenset.
+	*Boolean - bool.
+	*Binary - bytes, bytearray, memoryview.
+	*None - NoneType.
 ///Colocar uma tag dizendo qual o tipo da variavel, após o "recebe" irá transformar a variavel que recebe o input como o tipo da variavel; num = int(input()).
 ///Ao usar o comando print(type(var)) consigo ver o tipo de uma variavel.
 *isnumeric() - Função que retona se o valor é numérico.
@@ -28,7 +53,10 @@ CEV - Aula 2 - (01/10/23)
 ///Os operadores aritméticos e comparativos seguem o padrão.
 ///Escrever :.2f num placeholder limita as casas decimais da variavel, podendo substuir o 2f por valores de formatação.
 ///Escrever end='' no final dum print, impede a quebra de linha do mesmo e digita oque tiver dentro das aspas.
-
++++COMANDOS+++
+--Native
+*print(f'') - Função que escreve algo na tela.
+*type() - Função que mostra o tipo da variável.
 ---------------------------//-----------------------------
 CEV - Aula 3 - (06/10/23)
 #Utilizando Módulos
@@ -40,6 +68,9 @@ CEV - Aula 3 - (06/10/23)
 *Random as r - Biblioteca utilizada para fazer randomizações.
 	*r.choice(var) - Comando que escolhe um item aleatório dentro de uma lista.
 	*r.shuffle(var) - Comando que randomiza os elementos dentro de uma lista.
++++COMANDOS+++
+--Native
+*
 
 ---------------------------//-----------------------------
 CEV - Aula 4 - (06/10/23)
@@ -60,6 +91,9 @@ CEV - Aula 4 - (06/10/23)
 	*split() - Divide os caracteres em uma lista de elementos, baseado nos espaços ou delimitadores.
 	*join() - Junta uma lista de elementos em uma String;'-'.join(var).
 ///Se utilizar três aspas num print """texto"""" é possível printar um bloco de texto, indo sua quebra de linha junto.
++++COMANDOS+++
+--Native
+*
 
 ---------------------------//-----------------------------
 CEV - Aula 5 - (09/10/23)
@@ -70,6 +104,9 @@ CEV - Aula 5 - (09/10/23)
 *biblioteca time - Biblioteca para controlar o tempo de execução do programa.
 	*sleep - Faz o computador "dormir" por um momento.
 *end='' - comando que serve para juntar o final de um print com o começo do próximo.
++++COMANDOS+++
+--Native
+*
 
 ---------------------------//-----------------------------
 CEV - Aula 6 - (10/10/23)
@@ -81,6 +118,9 @@ CEV - Aula 6 - (10/10/23)
 	*Text - 30 ao 37,97 representam as cores de texto, respectivamente(preto, vermelho, verde, amarelo, azul, roxo, ciano, cinza, branco).
 	*Back - 40 ao 47,107 representam as cores de fundo, respectivamente(preto, vermelho, verde, amarelo, azul, roxo, ciano, cinza, branco).
 ///É possível armazenar os códigos em variáveis e utilizá-los nos placeholders.
++++COMANDOS+++
+--Native
+*
 
 ---------------------------//-----------------------------
 CEV - Aula 7 - (10/10/23)
@@ -89,23 +129,35 @@ CEV - Aula 7 - (10/10/23)
 #Exercícios
 ///Pode-se utilizar a variavel no meio de duas comparações; if 5 > var >= 3:.
 ///Pode-se utilizar uma comparação de igualdade com mais de duas variaveis;if var1== var2 == var3:.
++++COMANDOS+++
+--Native
+*
 
 ---------------------------//-----------------------------
 CEV - Aula 8 - (12/10/23)
 #Estrutura de repetição for
 #Exercícios
 *For - for Var In Range(x,y,z): - Sendo var uma variavel qualquer, In o que será utilizado como repetição, Range o alcance da repeitção e sendo X,Y,Z valores de controle(1,10,2), começa em 1, vai até 10 e pula de 2 em 2.
++++COMANDOS+++
+--Native
+*
 
 ---------------------------//-----------------------------
 CEV - Aula 9 - (13/10/23)
 #Estrutura de repetição while
 ///Utilizar o while no lugar do for quando não soubr quantas repetições serão necessárias.
 *while (expressão): ||O loop irá se repetir enquanto a expressão for verdadeira.
++++COMANDOS+++
+--Native
+*
 
 ---------------------------//-----------------------------
 CEV - Aula 10 - (19/10/23)
 #Interrompendo repetições while
 ///Ao criar um loop while sem uma expressão, ele se torna infinito e ao utilizarmos um comando(break) ele para o loop.
++++COMANDOS+++
+--Native
+*
 
 ---------------------------//-----------------------------
 CEV - Aula 11 - (03/11/23)
@@ -115,6 +167,10 @@ CEV - Aula 11 - (03/11/23)
 ///As tuplas são IMUTÁVEIS em python.
 ///É possível concatenar arrays; C = A+B.
 ///É possível saber a posição de um elemento dum array utilizando o comando index; A.index(X).
++++COMANDOS+++
+--Native
+*
+
 ----------------------------------------------------------
 COMANDOS*****
 #NATIVOS
