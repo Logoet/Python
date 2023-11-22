@@ -5,8 +5,8 @@
 SUMÁRIO
 A0  - Introdução.
 A1  - Tipos de Dados/Saída de dados
-A2  - 
-A3  - 
+A2  - Numbers/Strings
+A3  - Booleans, lists, Tuples
 A4  -
 A5  -
 A6  -
@@ -18,18 +18,16 @@ A11 -
 
 
 ---------------------------//-----------------------------
-CEV - Aula 0 - (01/10/23)
+Aula 0 - Introdução
 ##Introdução.
 //O Python é usado para: Web development(server-side), software development, matemática e system scripting.
 //O Python pode ser conectado a sistemas de banco de dados, pode trabalhar com arquivos de texto, pode trabalhar com grandes dados e matemática complexa.
 //O python suporta sistema procedural, OOP e sistema funcional.
 
 ---------------------------//-----------------------------
-Aula 1 - X
-##Tipos de Dados
+Aula 1 - Tipos de Dados/Saída de dados
 #Tipos primitivos e Saída de Dados
 #Operadores Aritméticos
-
 //Em Python as variáveis não precisam ser declaradas com um tipo e podem mudar de tipo conforme o programa roda.
 *Casting - forçar o tipo de uma variável; x = str(3), y = int(3).
 *Unpacking - É possível atribuir os valores duma lista/tupla/etc em variáveis iguais ao número de itens da lista; num[1...3] x,y,z=num.
@@ -43,54 +41,82 @@ Aula 1 - X
 	*Boolean - bool.
 	*Binary - bytes, bytearray, memoryview.
 	*None - NoneType.
-///Colocar uma tag dizendo qual o tipo da variavel, após o "recebe" irá transformar a variavel que recebe o input como o tipo da variavel; num = int(input()).
-///Ao usar o comando print(type(var)) consigo ver o tipo de uma variavel.
-*isnumeric() - Função que retona se o valor é numérico.
-///is+algo gera funções que verificam se o valor é alguma coisa em específica.
-///Os operadores aritméticos e comparativos seguem o padrão.
-///Escrever :.2f num placeholder limita as casas decimais da variavel, podendo substuir o 2f por valores de formatação.
-///Escrever end='' no final dum print, impede a quebra de linha do mesmo e digita oque tiver dentro das aspas.
+
 +++COMANDOS+++
 --Native
 *print(f'') - Função que escreve algo na tela.
 *type() - Função que mostra o tipo da variável.
+*isnumeric() - Função que retona se o valor é numérico.
 ---------------------------//-----------------------------
-CEV - Aula 3 - (06/10/23)
-#Utilizando Módulos
-///Aula explicando o que são e pra que servem bibliotecas.
-*import - Comando utilizado para importar uma biblioteca.
-	*from - Comando que pode ser usado antes do nome da biblioteca para importar somente um elemento específico da biblioteca.
-*Lista Python - Para criar uma lista basta escrever a variavel recebe [var1,var2].
-	*list.insert(var1,var2) - Comando para inserir valores na lista. A var1 é a posição onde os elementos serão inseridos e a partir dar var2 serão os elementos a serem inseridos.
-*Random as r - Biblioteca utilizada para fazer randomizações.
-	*r.choice(var) - Comando que escolhe um item aleatório dentro de uma lista.
-	*r.shuffle(var) - Comando que randomiza os elementos dentro de uma lista.
+Aula 2 - Numbers/Strings
+#Numbers
+#Random
+#Casting
+#Strings
+*Casting - Atribuição de tipos numa variável. Para converter basta passar o tipo a uma nova variável; x = float(x).
+*Multiline Strings - Ao usar três aspas, é possível criar um bloco que irá seguir a identação do código ao ser printada.
+*Looping Through String - É possível percorrer uma string com for; for x in "banana"||print(x).
+*Check String - É possível verificar se uma letra ou conjunto de letras está presente numa String; "oi" in txt.
+*Slicing - É possível retornar partes de uma string, ao delimitar seu inicio, fim e contador; x[1:5], x[:5], x[-5:-2], x[2:5:2]. 
+	*Check if - Pode ser usado com IF; if "oi" in txt:.
+	*Check if not - Usar o not num if para verificar se não há um texto numa string; if "oi" not in txt:.
+*escape Character - É possível inserir caracteres ilegais numa string, ao utilizar uma '\' + o caractere especial.
+*Formatting Types - É possível modificar o conteúdo da função format() ao utilizar certos tipos de formatação num placeholder;:.2f.
+//Escrever end='' no final dum print, impede a quebra de linha do mesmo e digita oque tiver dentro das aspas.
+
 +++COMANDOS+++
---Native
-*
+--NATIVE
+*len() - Função que retorna o tamanho duma string.
+*upper() - Função que retorna uma string em caixa alta.
+*lower() - Função que retorna uma string em caixa baixa.
+*casefold() - Função similiar ao lower(), porém mais poderosa.
+*strip() - Função que retorna a string sem espaços antes e depois do seu "conteúdo".
+*replace() - Função que troca um trecho duma string por outro.
+*split() - Função que retorna uma lista com partes de uma string, baseado num parâmetro separador.
+*format() - Função que recebe um parâmetro, formata ele e insere-o num placeholder.
+*capitalize - Função que retorna uma string com o primeiro caracter em caixa alta.
+*center() - Função que retorna uma string centralizada, com seus espaços extras preenchidos por um parâmetro.
+*count()- Função que retorna quantas vezes um parâmetro apareceu numa string.
+*endswith() - Função que retorna True caso o ultimo caractere seja um certo valor.
+*find() - Função que retorna a posição da primeira aparição dum parâmetro ou -1 caso ele não exista.
+*join() - Função que junta os itens duma tupla/lista numa string, com um parâmetro separador.
+
+--RANDOM
+*randint() - Função que retorna um número aleatório.
+*choice() - Função que retorna um elemente aleatório duma lista, tupla.
+*choices() - Função que retorna uma lista com os valores sorteados de outra lista.
+*shuffle() - Função que reorganiza os itens duma LISTA.
+*sample() - Função que retorna uma certa quantidade de itens duma lista.
+*random() - Funão que retorna um número float entre 0 e 1.
+*uniform() - Função que retorna um número float entre 2 parâmetros.
+*triangular() - Função que retorna um número float entre 2 parâmetros, porém com um peso para algum dos parâmetros.
 
 ---------------------------//-----------------------------
-CEV - Aula 4 - (06/10/23)
-#Manipulando Texto
-///No python usa-se [] para selecionar elementos duma string. Podendo usar numeros para delimitar quais caracteres serão pegos; var[12:15], var[:12].
-*len() - Comando retorna a largura de uma String.
-*count('') - Comando que conta quantos caracteres existem dentro da String.
-*find('') - Comando que procura/verifica um texto dentro duma String.
-*in - Comando que retorna verdadeiro ou falso caso o texto exista na String; 'Olá' in var.
-*replace ('') - Comando que substitui uma cadeia de caracteres por outra.
-*Comandos transformadores - Comandos que transforam o texto duma String.
-	*upper() - Transforma em caixa alta.
-	*lower() - Transforma em caixa baixa
-	*capitalize() - Transforma a em caixa baixa, mas a primeira fica em maiúscula.
-	*title() - Transforma todas as palavras(textos separados por espaço, ou algum delimitador) em caixa baixa, mantendo sua inicial maiúscula.
-	*strip() - Comando que remove os espaços inúteis duma String. Tendo as variações R-L.
-*Comandos de Divisão/junção - Comandos para separar e manusear os caracteres duma String.
-	*split() - Divide os caracteres em uma lista de elementos, baseado nos espaços ou delimitadores.
-	*join() - Junta uma lista de elementos em uma String;'-'.join(var).
-///Se utilizar três aspas num print """texto"""" é possível printar um bloco de texto, indo sua quebra de linha junto.
+Aula 4 - Booleans, lists, Tuples
+#Booleans
+#Operators
+#List
+#Tuple
+*Tuple - myTuple().
+*List - myList[].
+*Negative Index - É possível ler uma lista de trás pra frente com seus indices negativos; list[-5:-1].
+*Evaluate Values/Variables - Praticamente toda expressão se usada numa função booleana retornará TRUE. Porém seus casos vazios retornará FALSE; Um INT = 0, lista vazia, tupla vazia.
+*loop through a list - É possível percorrer uma lista com a estrutura: for x in list.
+*looping shorthand - É possível encurtar o loop num lista: [print(x) for x in list].
+*Tupple change - É possível mudar itens numa tupla ao transformá-la numa lista e então criar uma nova tupla.
+*Append tuples - É possível concatenar duas tuplas e assim, adicionar itens nela.
 +++COMANDOS+++
 --Native
-*
+*insert() - Função que insere um item numa lista sem alterar seus indexes.
+*append() - Função que adiciona um item no final duma lista.
+*extend() - Função que insere uma tupla/lista,dict numa lista já existente.
+*remove() - Função que remove a primeira ocorrência dum determinado item.
+*pop() - Função que remove um determinado index duma lista.
+*del - Keyword que remove um determinado index duma lista ou toda a lista.
+*clear() - Função que limpa os itens duma lista.
+*sort() - Função que ordena a lista de maneira alfanumérica e ascendente.
+*reverse() - Função que inverte a ordem duma lista.
+*copy() - Função que retorna a copia de uma lista.
 
 ---------------------------//-----------------------------
 CEV - Aula 5 - (09/10/23)
