@@ -11,11 +11,10 @@ for i in range(0,5):
         lista.append(num)
         print(f'O número {num} foi adicionado na posição de número {len(lista)}.')
     else:
-        for j in enumerate(lista):
-            
-            print(f'O valor de j={j}')
-            if num > lista[-j]:
-                lista.insert(j+1,num)
-                print(f'O número {num} foi adicionado na posição de número {j}.')
+        cont = 0
+        while cont < len(lista):
+            if num <= lista[cont]:
+                lista.insert(cont, num)
                 break
+            cont += 1
 print(f'A lista digitada foi:{lista}')
