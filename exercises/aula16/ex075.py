@@ -25,7 +25,4 @@ for i in range(1,len(arrayNumber)):
         print(arrayNumber[i-1])
 
 if cont == 0:
-    print("Não houveram valores pares!")    
-
-    
-# print(f'(B) O valor 3')  
+    print("Não houveram valores pares!")
